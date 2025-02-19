@@ -406,7 +406,7 @@ const loginFunc = async function (PIN, user, screen) {
   // Fetch Time Travel Profile for Premium users
   console.log(`Fetching Time Travel profile for ${currentProfile.userName}...`);
   try {
-    const res = await fetch('http://localhost:3000/timeTravelProfiles', {
+    const res = await fetch('https://trinitycapitaltestserver-2.azurewebsites.net/timeTravelProfiles', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ userName: currentProfile.userName }),
