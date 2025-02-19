@@ -105,7 +105,7 @@ if (mainApp) mainApp.style.display = 'none';
 
 /***********************************************************Server Listeners**********************************************/
 
-const socket = io('http://localhost:3000');
+const socket = io('https://trinitycapitaltestserver-2.azurewebsites.net');
 
 // Emit 'identify' event to associate the client with a user ID
 socket.on('connect', () => {
@@ -159,17 +159,17 @@ if (timerModal) {
 }
 
 /***********************************************************Server Functions**********************************************/
-const testServerProfiles = 'http://localhost:3000/profiles';
+const testServerProfiles = 'https://trinitycapitaltestserver-2.azurewebsites.net/profiles';
 
-const loanURL = 'http://localhost:3000/loans';
+const loanURL = 'https://trinitycapitaltestserver-2.azurewebsites.net/loans';
 
-const donationURL = 'http://localhost:3000/donations';
+const donationURL = 'https://trinitycapitaltestserver-2.azurewebsites.net/donations';
 
-const donationSavingsURL = 'http://localhost:3000/donationsSavings';
+const donationSavingsURL = 'https://trinitycapitaltestserver-2.azurewebsites.net/donationsSavings';
 
-const balanceURL = 'http://localhost:3000/initialBalance';
+const balanceURL = 'https://trinitycapitaltestserver-2.azurewebsites.net/initialBalance';
 
-const productivityURL = 'http://localhost:5040/timers';
+
 
 // Store the received profiles in a global variable or a state variable if you're using a front-end framework
 let Profiles = [];
