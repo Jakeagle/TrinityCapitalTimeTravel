@@ -25,7 +25,7 @@ const backBTN = $('.backBtn');
 
 const loginBTN = document.querySelector('.login__btn');
 
-const depositLink = 'http://localhost:3000/deposits';
+const depositLink = 'https://trinitycapitaltestserver-2.azurewebsites.net/deposits';
 
 mainApp.css('display', 'none');
 
