@@ -20,7 +20,7 @@ let billType;
 let paymentType;
 let chosenSelect;
 
-const socket = io('http://localhost:3000');
+const socket = io('https://trinitycapitaltestserver-2.azurewebsites.net');
 
 /**********************************************Functions***********************************************/
 
